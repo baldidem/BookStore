@@ -48,6 +48,7 @@ namespace BookStore.Controllers
 
         }
 
+        // Book entitysi degil CreateBookModel aliniyor.
         [HttpPost]
         public IActionResult AddBook([FromBody] CreateBookModel newBook)
         {
@@ -66,6 +67,7 @@ namespace BookStore.Controllers
 
         }
 
+        // Book entitysi degil UpdateBookModel aliniyor.
         [HttpPut]
         public IActionResult UpdateBook(int id, [FromBody] UpdateBookModel updatedBook)
         {
